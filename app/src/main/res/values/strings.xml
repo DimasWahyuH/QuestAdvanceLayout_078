@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">QuestAdvanceLayout_078</string>
+    <string name="prodi">Teknologi Informasi</string>
+    <string name="univ">Universitas Muhammadiyah Yogyakarta</string>
+    <string name="nama">Dimas</string>
+    <string name="alamat">Seyegan</string>
+    <string name="copyright">copyright, 2025></string>
 </resources>
