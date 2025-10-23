@@ -68,6 +68,81 @@ fun ActivitasPertama(modifier: Modifier){
                 }
             }
         }
+        Card (modifier = Modifier
+            .fillMaxWidth(1f)
+            .padding(horizontal = 12.dp, vertical = 6.dp),
+            colors = CardDefaults.cardColors(
+                containerColor = Color(0xFF0000FF) // Warna Biru Penuh (Blue)
+            )){
+            Row() {
+                val gambar = painterResource(R.drawable.logo_umy) // Pastikan R.drawable.logo_umy ada
+                Image(
+                    painter = gambar,
+                    contentDescription = null,
+                    modifier = modifier.size(100.dp).padding(5.dp)
+                )
+                Spacer(modifier = modifier.width(30.dp))
+                Column() {
+                    Text(
+                        stringResource(R.string.isi_nama), // Asumsi ada string resource ini
+                        fontSize = 30.sp,
+                        fontFamily = FontFamily.Cursive,
+                        color = Color.White,
+                        modifier = Modifier.padding(top=15.dp)
+                    )
+                    Text(
+                        stringResource(R.string.isi_nohp), // Asumsi ada string resource ini
+                        fontSize = 20.sp,
+                        color = Color.White,
+                        modifier = Modifier.padding(top=10.dp)
+                    )
+                    Text(
+                        stringResource(R.string.isi_alamat), // Asumsi ada string resource ini
+                        fontSize = 20.sp,
+                        color = Color.White,
+                        modifier = Modifier.padding(top=5.dp)
+                    )
+                }
+            }
+        }
+
+        Card (modifier = Modifier
+            .fillMaxWidth(1f)
+            .padding(horizontal = 12.dp, vertical = 6.dp),
+            colors = CardDefaults.cardColors(
+                containerColor = Color(0xFF008000) // Warna Hijau Gelap (Green)
+            )){
+            Row() {
+                val gambar = painterResource(R.drawable.logo_umy) // Pastikan R.drawable.logo_umy ada
+                Image(
+                    painter = gambar,
+                    contentDescription = null,
+                    modifier = modifier.size(100.dp).padding(5.dp)
+                )
+                Spacer(modifier = modifier.width(30.dp))
+                Column() {
+                    Text(
+                        stringResource(R.string.isi_nama2), // Asumsi ada string resource ini
+                        fontSize = 30.sp,
+                        fontFamily = FontFamily.Cursive,
+                        color = Color.White,
+                        modifier = Modifier.padding(top=15.dp)
+                    )
+                    Text(
+                        stringResource(R.string.isi_nohp2), // Asumsi ada string resource ini
+                        fontSize = 20.sp,
+                        color = Color.White,
+                        modifier = Modifier.padding(top=10.dp)
+                    )
+                    Text(
+                        stringResource(R.string.isi_alamat2), // Asumsi ada string resource ini
+                        fontSize = 20.sp,
+                        color = Color.White,
+                        modifier = Modifier.padding(top=5.dp)
+                    )
+                }
+            }
+        }
         Box(
             modifier = Modifier
                 .fillMaxSize()
